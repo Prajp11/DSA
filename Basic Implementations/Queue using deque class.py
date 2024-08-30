@@ -1,7 +1,9 @@
-# Implementation of queue using list with user input
+# Implementation of queue using collections.deque 
+
+from collections import deque
 
 def main():
-    queue = []
+    q = deque()
 
     while True:
         print("\nMenu:")
@@ -14,21 +16,21 @@ def main():
 
         if choice == '1':
             data = input("Enter the value to enqueue: ")
-            queue.append(data)
-            print(f"Enqueued '{data}' to queue.")
+            q.append(data)
+            print(f"Enqueued '{data}' to the queue.")
         
         elif choice == '2':
-            if len(queue) == 0:
+            if len(q) == 0:
                 print("Queue is empty. Nothing to dequeue.")
             else:
-                dequeued_element = queue.pop(0)
-                print(f"Dequeued '{dequeued_element}' from queue.")
+                dequeued_element = q.popleft()
+                print(f"Dequeued '{dequeued_element}' from the queue.")
         
         elif choice == '3':
-            if len(queue) == 0:
+            if len(q) == 0:
                 print("Queue is empty.")
             else:
-                print("Current queue:", queue)
+                print("Current queue:", list(q))
         
         elif choice == '4':
             print("Exiting...")
@@ -39,3 +41,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+# Basic Implementation using collections.deque
+
+
+# from collections import deque
+# q = deque()
+# q.append('a')
+# q.append('b')
+# q.append('c')
+# print("Initial queue")
+# print(q)
+# print("\nElements dequeued from the queue")
+# print(q.popleft())
+# print(q.popleft())
+# print(q.popleft())
+
+# print("\nQueue after removing elements")
+# print(q)
