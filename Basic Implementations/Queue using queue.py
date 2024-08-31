@@ -18,6 +18,7 @@ def main():
         
         choice = input("Enter your choice: ")
 
+
         if choice == '1':
             if q.full():
                 print("Queue is full. Cannot enqueue more elements.")
@@ -62,32 +63,34 @@ if __name__ == "__main__":
 
 # from queue import Queue
 
-# Create a queue with a maximum size of 3
+# Create a queue with a maximum size of 3 --- comment
 # q = Queue(maxsize=3)
 
-# Print the current size of the queue (should be 0 initially)
+# Print the current size of the queue (should be 0 initially) --- comment
 # print("Initial queue size:", q.qsize())  # Output: 0
 
-# Enqueue (put) elements into the queue
+# Enqueue (put) elements into the queue --- comment
 # q.put('a')
 # q.put('b')
-# q.put('c')
+# q.put('c')1
 
-# Check if the queue is full
+
+# Check if the queue is full --- comment
 # print("\nFull:", q.full())  # Output: True
 
-# Dequeue (get) elements from the queue
+# Dequeue (get) elements from the queue --- comment
 # print("\nElements dequeued from the queue:")
 # print(q.get())  # Output: 'a'
 # print(q.get())  # Output: 'b'
 # print(q.get())  # Output: 'c'
 
-# Check if the queue is empty after dequeuing all elements
-# print("\nEmpty:", q.empty())  # Output: True
+# Check if the queue is empty after dequeuing all elements --- comment
+# print("\nEmpty:", q.empty())  
+# # Output: True --- comment
 
-# Enqueue another element into the queue
+# Enqueue another element into the queue --- comment
 # q.put(1)
 
-# Check if the queue is empty and full after adding one element
+# Check if the queue is empty and full after adding one element --- comment
 # print("\nEmpty:", q.empty())  # Output: False
 # print("Full:", q.full())  # Output: False

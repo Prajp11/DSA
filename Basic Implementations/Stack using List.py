@@ -65,3 +65,27 @@ if __name__ == "__main__":
 # print('\nStack after elements are popped:')
 # print(stack)
 
+
+#Basic Code ---comment
+
+# Python program to demonstrate stack implementation using list ---comment
+
+# stack = []
+
+# append() function to push element in the stack --- comment
+
+# stack.append('a')
+# stack.append('b')
+# stack.append('c')
+
+# print('Initial stack')
+# print(stack)
+
+# pop() function to pop element from stack in LIFO order --- comment
+# print('\nElements popped from stack:')
+# print(stack.pop())
+# print(stack.pop())
+# print(stack.pop())
+
+# print('\nStack after elements are popped:')
+# print(stack)
