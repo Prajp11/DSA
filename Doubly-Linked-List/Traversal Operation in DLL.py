@@ -36,4 +36,4 @@ class doublyLL:
                 n = n.pref 
         
 dl1  = doublyLL()
-dl1.print_LL()    
+dl1.print_LL_reverse()    
